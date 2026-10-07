@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 
-# Load saved files
+# Load Saved files
 model = joblib.load("model/model.pkl")
 vectorizer = joblib.load("model/vectorizer.pkl")
 encoders = joblib.load("model/label_encoders.pkl")
